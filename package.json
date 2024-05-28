@@ -1,0 +1,21 @@
+{
+    "name": "weather-cli",
+    "version": "1.0.0",
+    "description": "CLI for getting weather",
+    "main": "app.js",
+    "bin": "./app.js",
+    "scripts": {
+        "start": "node app.js",
+        "dev": "nodemon app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "cli",
+        "weather"
+    ],
+    "author": "Irina Postnova",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^3.1.1"
+    }
+}
