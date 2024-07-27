@@ -2,11 +2,14 @@
     "name": "weather-cli",
     "version": "1.0.0",
     "description": "CLI for getting weather",
-    "main": "app.js",
-    "bin": "./app.js",
+    "main": "weather.js",
+    "bin": {
+        "weather": "weather.js"
+    },
+    "type": "module",
     "scripts": {
-        "start": "node app.js",
-        "dev": "nodemon app.js",
+        "start": "node weather.js",
+        "dev": "nodemon weather.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [
@@ -17,5 +20,10 @@
     "license": "ISC",
     "devDependencies": {
         "nodemon": "^3.1.1"
+    },
+    "dependencies": {
+        "axios": "^1.7.2",
+        "chalk": "^5.3.0",
+        "dedent": "^1.5.3"
     }
 }
